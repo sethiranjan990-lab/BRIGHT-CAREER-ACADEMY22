@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightCareer Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>BrightCareer Academy</h1>
+  <p>ଶିକ୍ଷା ଯାହା ଭବିଷ୍ୟତ ଗଢ଼େ</p>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>🎓 Admission Open 2026</h2>
+  <p>Quality Education | Experienced Faculty | Result Focused</p>
+  <button onclick="document.getElementById('admission').scrollIntoView({behavior:'smooth'})" class="btn">Apply Now</button>
+</section>
+
+<section id="courses" class="courses">
+  <h2>📘 Our Courses</h2>
+  <div class="course-list">
+    <div class="course-card"><h3>+2 Coaching</h3><p>Arts | Science | Commerce</p></div>
+    <div class="course-card"><h3>+3 Degree Coaching</h3><p>All Streams</p></div>
+    <div class="course-card"><h3>Competitive Exam</h3><p>CT | B.Ed | Banking | SSC</p></div>
+    <div class="course-card"><h3>Spoken English</h3><p>Basic to Advanced</p></div>
+    <div class="course-card"><h3>Computer Course</h3><p>MS Office | Internet | Job Skills</p></div>
+  </div>
+</section>
+
+<section id="admission" class="form">
+  <h2>🧾 Online Admission Form</h2>
+  <input id="name" placeholder="Student Name">
+  <input id="course" placeholder="Course">
+  <input id="stream" placeholder="Stream">
+  <input id="mobile" placeholder="Mobile Number">
+  <input id="address" placeholder="Address">
+  <input id="school" placeholder="School / College">
+  <select id="mode"><option>Offline</option><option>Online</option></select>
+  <button onclick="submitForm()">Submit Admission</button>
+  <p id="msg"></p>
+  <button onclick="whatsappChat()" class="btn" style="margin-top:10px;">💬 WhatsApp Enquiry</button>
+  <a href="https://rzp.io/l/YOUR_RAZORPAY_LINK" target="_blank" class="btn">💳 Pay Fees / Book Seat</a>
+</section>
+
+<section id="contact" class="contact">
+  <h2>📞 Contact Us</h2>
+  <p>BrightCareer Academy, Near Main Road, Odisha</p>
+  <p>Mobile: XXXXXXXXXX</p>
+  <p>Email: info@brightcareeracademy.com</p>
+</section>
+
+<footer>
+  <p>© 2026 BrightCareer Academy | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
